@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Fernando Gürtler</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background: #d1d5db;
+      color: #1e293b;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #f3f4f6;
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    .sidebar {
+      background: #374151;
+      color: white;
+      padding: 50px 35px;
+    }
+
+    .sidebar h1 {
+      font-size: 36px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .sidebar h2 {
+      font-size: 15px;
+      color: #cbd5e1;
+      font-weight: 400;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .section-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #14b8a6;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .contact p,
+    .sidebar p {
+      font-size: 14px;
+      margin-bottom: 12px;
+      color: #e5e7eb;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: rgba(20,184,166,0.12);
+      border: 1px solid rgba(20,184,166,0.18);
+      border-radius: 4px;
+      padding: 8px 10px;
+      font-size: 12px;
+    }
+
+    .main {
+      padding: 55px;
+    }
+
+    .summary {
+      margin-bottom: 45px;
+    }
+
+    .summary p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #3f3f46;
+    }
+
+    .job {
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .job:last-child {
+      border-bottom: none;
+    }
+
+    .job h3 {
+      font-size: 24px;
+      color: #042f2e;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .job h4 {
+      font-size: 16px;
+      color: #0f766e;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .date {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 18px;
+    }
+
+    .job ul {
+      padding-left: 20px;
+    }
+
+    .job li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.7;
+    }
+
+    .education,
+    .courses {
+      margin-top: 45px;
+    }
+
+    .education-item,
+    .course-item {
+      margin-bottom: 20px;
+    }
+
+    .education-item h4,
+    .course-item h4 {
+      font-size: 15px;
+      color: #042f2e;
+      margin-bottom: 4px;
+    }
+
+    .education-item p,
+    .course-item p {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        padding: 0;
+      }
+
+      .container {
+        grid-template-columns: 1fr;
+        border-radius: 0;
+      }
+
+      .main {
+        padding: 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" style="display:block; max-width:1000px; background:#f9fafb;">
+
+  <header style="padding:50px 60px; border-bottom:4px solid #14b8a6; display:flex; justify-content:space-between; align-items:center; gap:40px; flex-wrap:wrap;">
+    <h1 style="font-size:42px; color:#042f2e; margin-bottom:10px; font-weight:800;">
+      Fernando Gürtler
+    </h1>
+
+    <p style="font-size:18px; color:#0f766e; font-weight:600; margin-bottom:20px;">
+      Analista de Sistemas PACS/RIS | Implantação | DICOM | HL7
+    </p>
+
+    <div style="display:flex; gap:30px; flex-wrap:wrap; font-size:14px; color:#475569;">
+      <span>📍 São Paulo - SP</span>
+      <span>✉️ nandogurtler@gmail.com</span>
+    </div>
+      <div>
+      <img src="eu.jpg"
+           alt="Perfil"
+           style="width:140px; height:140px; border-radius:50%; border:4px solid #14b8a6; padding:6px; background:white; object-fit:cover;">
+    </div>
+  </header>
+
+  <section style="padding:45px 60px; border-bottom:1px solid #e2e8f0; background:#f3f4f6;">
+    <h2 class="section-title">Resumo Profissional</h2>
+
+    <p style="font-size:15px; color:#334155; line-height:1.9; margin-top:20px;">
+      Profissional com mais de 15 anos de experiência em Tecnologia da Informação aplicada à saúde,
+      atuando com implantação e sustentação de sistemas PACS/RIS, integração DICOM/HL7,
+      administração de ambientes hospitalares, infraestrutura de TI e suporte técnico.
+    </p>
+
+    <br>
+
+    <p style="font-size:15px; color:#334155; line-height:1.9;">
+      Experiência em integração HIS/RIS/PACS, configuração de modalidades médicas,
+      Worklist, administração de servidores, análise de dados SQL, Power BI,
+      treinamento de usuários e desenvolvimento de sistemas.
+    </p>
+  </section>
+
+  <section style="padding:45px 60px; border-bottom:1px solid #e2e8f0;">
+    <h2 class="section-title">Experiência Profissional</h2>
+
+    <div class="job">
+      <h3>Vivere Consultoria</h3>
+      <h4>Analista de Sistemas PACS</h4>
+      <div class="date">Outubro de 2024 - Atual</div>
+
+      <ul>
+        <li>🖥️ Implantação de sistemas PACS/RIS em clínicas e hospitais.</li>
+        <li>🔗 Integração DICOM, Worklist e HIS/RIS/PACS.</li>
+        <li>⚙️ Administração e monitoramento de ambientes PACS.</li>
+        <li>👨‍⚕️ Treinamento de usuários e equipes médicas.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Lúmen Centro de Diagnósticos</h3>
+      <h4>Analista de TI</h4>
+      <div class="date">Fevereiro de 2022 - Outubro de 2024</div>
+
+      <ul>
+        <li>Administração de servidores RIS/PACS e integração com Tasy.</li>
+        <li>Configuração de modalidades PACS/RIS.</li>
+        <li>Monitoramento da integração DICOM.</li>
+        <li>Power BI, SQL e desenvolvimento PHP.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Cartório de Registro de Imóveis</h3>
+      <h4>Analista de Suporte em Informática</h4>
+      <div class="date">Fevereiro de 2014 - Fevereiro de 2022</div>
+
+      <ul>
+        <li>Segurança da informação e infraestrutura de TI.</li>
+        <li>Administração de rede, backup e suporte técnico.</li>
+        <li>Desenvolvimento de sistemas PHP/MySQL.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Hospital Estadual de Sumaré</h3>
+      <h4>Técnico de Suporte em Informática</h4>
+      <div class="date">Dezembro de 2008 - Fevereiro de 2014</div>
+
+      <ul>
+        <li>Suporte ao sistema hospitalar MV 2000i.</li>
+        <li>Infraestrutura, backup e suporte aos usuários.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Topack do Brasil LTDA</h3>
+      <h4>Assistente de Suporte em Informática</h4>
+      <div class="date">Julho de 2007 - Abril de 2008</div>
+    </div>
+
+    <div class="job">
+      <h3>Banco do Brasil</h3>
+      <h4>Estágio em Análise de Sistemas</h4>
+      <div class="date">Junho de 2004 - Junho de 2006</div>
+    </div>
+
+    <div class="job">
+      <h3>Indústria Santista Têxtil S.A.</h3>
+      <h4>Estágio em Análise de Sistemas</h4>
+      <div class="date">Dezembro de 2001 - Dezembro de 2003</div>
+    </div>
+  </section>
+
+  <section style="padding:45px 60px;">
+    <h2 class="section-title">Cursos e Certificações</h2>
+
+    <div style="margin-top:25px; display:grid; gap:14px;">
+      <div class="course-item"><strong>Philips Vue PACS Technical New Hire Intermediate</strong> | Philips | 2026</div>
+      <div class="course-item"><strong>Vue PACS Technical</strong> | Philips | 2025</div>
+      <div class="course-item"><strong>DICOM Philips Service Training Certificate</strong> | Philips | 2025</div>
+      <div class="course-item"><strong>PACS Administrator - Philips</strong> | 2022</div>
+      <div class="course-item"><strong>Power BI - Santander Open Academy</strong> | 2025</div>
+      <div class="course-item"><strong>Desenvolvimento Web CSS e HTML - FGV</strong> | 2025</div>
+      <div class="course-item"><strong>PHP com MySQL e PostgreSQL - SENAC</strong> | 2012</div>
+      <div class="course-item"><strong>Windows Server 2008 - Unicamp</strong> | 2011</div>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
